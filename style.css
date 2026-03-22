@@ -175,7 +175,8 @@ Text Domain: tm001
   padding: 0;
 }
 
-body {
+body,
+.wp-theme-wp-tm001 {
   font-family: var(--font-family-sans);
   line-height: 1.6;
   color: var(--text-primary);
