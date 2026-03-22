@@ -9,7 +9,7 @@
                     <section class="services">
 
                     </section>
-                    <section class="home bog">
+                    <section class="home blog">
 
                     </section>
                 </main>
