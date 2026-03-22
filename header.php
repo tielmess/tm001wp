@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php wp_title(); ?></title>
+    <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <p>Welcome to WP-DEVS Theme!</p>
+    <p>Welcome to WP-TM001 Theme!</p>
     <div id="page" class="site">
         <header>
             <section class="top-bar">
