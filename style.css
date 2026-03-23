@@ -267,6 +267,9 @@ h4 {
   font-size: var(--font-size-base);
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=TOP-BAR & NAV
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .top-bar,
 .menu-area {
   background-color: var(--accent-color);
@@ -304,16 +307,9 @@ h4 {
   text-decoration: underline;
 }
 
-.site-footer {
-  background-color: var(--accent-color);
-  color: var(--font-light);
-  padding: 20px;
-  text-align: center;
-}
-.site-footer p {
-  margin: 0;
-  font-size: 1em;
-}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=HERO, SERVICES & UPDATES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .hero {
   /* Image credits: Evanto - Elegant Home Decor with Green Backdrop by FollowTheFlowStudio*/
@@ -342,4 +338,19 @@ h4 {
 }
 .services ul li {
   margin-bottom: var(--spacer-2);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=FOOTER
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.site-footer {
+  background-color: var(--accent-color);
+  color: var(--font-light);
+  padding: 20px;
+  text-align: center;
+}
+.site-footer p {
+  margin: 0;
+  font-size: 1em;
 }
