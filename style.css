@@ -31,10 +31,10 @@ Text Domain: tm001
   --font-light: #ffffff;
   --border-color: #e2e8f0;
   --shadow-color: rgba(0, 0, 0, 0.1);
-  --accent-color: #3c5d4a;
+  --accent-color: #505a4b;
   --accent-hover: #1e2f26;
   --border-subtle: #d4d4d4; /* light grey dividers */
-  --border-strong: #3c5d4a; /* brand border / emphasis */
+  --border-strong: #505a4b; /* brand border / emphasis */
   --ring: 0 0 0 3px var(--accent-color);
   /* Success */
   --success-main: #2d5f5d; /* deep teal */
@@ -271,7 +271,7 @@ h4 {
 .menu-area {
   background-color: var(--accent-color);
   color: var(--font-light);
-  padding: 10px;
+  padding: var(--spacer-3);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -306,4 +306,21 @@ h4 {
 .site-footer p {
   margin: 0;
   font-size: 1em;
+}
+
+.services,
+.updates {
+  padding: var(--spacer-6);
+  background-color: var(--bg-secondary);
+  margin-bottom: var(--spacer-6);
+}
+.services h2,
+.home.blog h2 {
+  margin-bottom: var(--spacer-4);
+}
+.services ul {
+  list-style: disc inside;
+}
+.services ul li {
+  margin-bottom: var(--spacer-2);
 }
