@@ -267,31 +267,34 @@ h4 {
   font-size: var(--font-size-base);
 }
 
-.site-header {
+.top-bar,
+.menu-area {
   background-color: var(--accent-color);
   color: var(--font-light);
-  padding: 20px;
-  text-align: center;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .site-header h1 {
   margin: 0;
   font-size: 2.5em;
 }
-.site-header nav ul {
+.menu-area nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.site-header nav ul li {
+.menu-area nav ul li {
   display: inline-block;
   margin: 0 15px;
 }
-.site-header nav ul li a {
+.menu-area nav ul li a {
   color: var(--font-light);
   text-decoration: none;
   font-size: 1.2em;
 }
-.site-header nav ul li a:hover {
+.menu-area nav ul li a:hover {
   text-decoration: underline;
 }
 .site-footer {
