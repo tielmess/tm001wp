@@ -4,7 +4,6 @@
             <div id="primary" class="content-area">
                 <main id="main" class="site-main">
                     <section class="hero">
-                        <img src="http://wp-tm001.local/wp-content/uploads/2026/03/creative-minimalist-living-room-interior-compositi-2026-03-09-09-01-28-utc-scaled.webp" alt="" style="width: 100%; height: auto; object-fit: cover;">
                         <h1>Welcome to WP-TM001 Theme</h1>
                         <p>This is a custom WordPress theme built for learning and experimentation.</p>
                     </section>

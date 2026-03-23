@@ -31,10 +31,10 @@ Text Domain: tm001
   --font-light: #ffffff;
   --border-color: #e2e8f0;
   --shadow-color: rgba(0, 0, 0, 0.1);
-  --accent-color: #505a4b;
+  --accent-color: #454b35;
   --accent-hover: #1e2f26;
   --border-subtle: #d4d4d4; /* light grey dividers */
-  --border-strong: #505a4b; /* brand border / emphasis */
+  --border-strong: #454b35; /* brand border / emphasis */
   --ring: 0 0 0 3px var(--accent-color);
   /* Success */
   --success-main: #2d5f5d; /* deep teal */
@@ -276,6 +276,12 @@ h4 {
   justify-content: space-between;
   align-items: center;
 }
+.top-bar .logo a {
+  color: var(--font-light);
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
 .site-header h1 {
   margin: 0;
   font-size: 2.5em;
@@ -297,6 +303,7 @@ h4 {
 .menu-area nav ul li a:hover {
   text-decoration: underline;
 }
+
 .site-footer {
   background-color: var(--accent-color);
   color: var(--font-light);
@@ -306,6 +313,16 @@ h4 {
 .site-footer p {
   margin: 0;
   font-size: 1em;
+}
+
+.hero {
+  background-image: url("http://wp-tm001.local/wp-content/uploads/2026/03/modern-living-room-interior-composition-with-moder-2026-03-09-21-43-48-utc-1-scaled.webp");
+  background-size: cover;
+  background-position: center;
+  color: var(--font-light);
+  padding: var(--spacer-12) var(--spacer-6);
+  min-width: 100%;
+  min-height: 600px;
 }
 
 .services,
