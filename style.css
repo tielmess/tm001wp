@@ -67,8 +67,8 @@ Text Domain: tm001
       --font-light: #ffffff;
       --border-color: #4a4a4a;
       --shadow-color: rgba(0, 0, 0, 0.3);
-      --accent-color: #7a9d88;
-      --accent-hover: #a0aca4;
+      --accent-color: #454b35;
+      --accent-hover: #1e2f26;
       --border-subtle: #404040; /* medium grey dividers */
       --border-strong: #6b9179; /* brand border / emphasis */
       --ring: 0 0 0 3px var(--accent-color);
@@ -105,8 +105,8 @@ Text Domain: tm001
     --font-light: #ffffff;
     --border-color: #4a4a4a;
     --shadow-color: rgba(0, 0, 0, 0.3);
-    --accent-color: #7a9d88;
-    --accent-hover: #a0aca4;
+    --accent-color: #454b35;
+    --accent-hover: #1e2f26;
     --border-subtle: #404040; /* medium grey dividers */
     --border-strong: #6b9179; /* brand border / emphasis */
     --ring: 0 0 0 3px var(--accent-color);
