@@ -21,11 +21,6 @@
                             while( have_posts() ) : the_post();
                         ?>
                             <article class="post">
-                                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                                <p class="post-meta">Posted on <?php the_date(); ?> by <?php the_author(); ?></p>
-                                <p class="post-categories">Categories: <?php the_category( ', ' ); ?></p>
-                                <p class="post-tags">Tags: <?php the_tags( '', ', ' ); ?></p>
-                                <p class="post-comments"><?php comments_number( 'No Comments', '1 Comment', '% Comments' ); ?></p>
                                 <div class="entry-summary">
                                     <?php the_excerpt(); ?>
                                 </div>
