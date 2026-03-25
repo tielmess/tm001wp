@@ -27,7 +27,7 @@ Text Domain: tm001
   --placeholder-text: #575757;
   --text-primary: #1a202c;
   --text-secondary: #4a4a4a;
-  --text-button: #ffffff;
+  --text-deep: #1a202c;
   --font-light: #ffffff;
   --border-color: #cecece;
   --shadow-color: rgba(0, 0, 0, 0.1);
@@ -61,9 +61,9 @@ Text Domain: tm001
       --bg-nav-accent: #222222;
       --bg-white-faded: rgba(255, 255, 255, 0.3);
       --bg-white-faded-border: 1px dotted #f1f5f2;
-      --text-primary: #778169;
+      --text-primary: #939f8d;
       --text-secondary: #e2e8f0;
-      --text-button: #1a202c;
+      --text-deep: #1a202c;
       --font-light: #ffffff;
       --border-color: #d4d4d4;
       --shadow-color: rgba(0, 0, 0, 0.3);
@@ -99,9 +99,9 @@ Text Domain: tm001
     --bg-nav-accent: #222222;
     --bg-white-faded: rgba(255, 255, 255, 0.3);
     --bg-white-faded-border: 1px dotted #f1f5f2;
-    --text-primary: #778169;
+    --text-primary: #939f8d;
     --text-secondary: #e2e8f0;
-    --text-button: #1a202c;
+    --text-deep: #1a202c;
     --font-light: #ffffff;
     --border-color: #d4d4d4;
     --shadow-color: rgba(0, 0, 0, 0.3);
@@ -256,6 +256,7 @@ h6 {
 
 h1 {
   font-size: var(--font-size-3xl);
+  color: var(--text-deep);
 }
 h2 {
   font-size: var(--font-size-2xl);
@@ -265,6 +266,18 @@ h3 {
 }
 h4 {
   font-size: var(--font-size-base);
+}
+h5 {
+  font-size: var(--font-size-sm);
+}
+h6 {
+  font-size: var(--font-size-xs);
+}
+p {
+  margin-block-end: var(--spacer-4);
+  color: var(--text-secondary);
+  line-height: var(--spacer-6);
+  max-width: 75ch;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -332,6 +345,12 @@ h4 {
   min-height: 600px;
 }
 
+.hero p {
+  color: var(--font-light);
+  font-size: var(--font-size-lg);
+  max-width: 65ch;
+}
+
 .services {
   padding: var(--spacer-6);
   background-color: var(--bg-secondary);
@@ -342,9 +361,11 @@ h4 {
 }
 .services ul {
   list-style: disc inside;
+  color: var(--accent-color);
 }
 .services ul li {
   margin-bottom: var(--spacer-2);
+  color: var(--text-secondary);
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -394,6 +415,15 @@ h4 {
 .post-tags,
 .post-comments {
   font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.entry-summary {
+  margin-top: var(--spacer-4);
+  color: var(--text-secondary);
+}
+
+.entry-copy {
   color: var(--text-secondary);
 }
 
