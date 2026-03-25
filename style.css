@@ -275,9 +275,18 @@ h4 {
   background-color: var(--accent-color);
   color: var(--font-light);
   padding: var(--spacer-3);
+}
+.top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 0;
+}
+.menu-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
 }
 .top-bar .logo a {
   color: var(--font-light);
@@ -350,6 +359,28 @@ h4 {
   padding: 20px;
   text-align: center;
 }
+.footer-menu {
+  margin-bottom: var(--spacer-2);
+}
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.footer-nav ul li a {
+  color: var(--font-light);
+  text-decoration: none;
+  font-size: 1em;
+}
+.site-info {
+  margin-top: var(--spacer-8);
+  margin-bottom: var(--spacer-4);
+}
+
 .site-footer p {
   margin: 0;
   font-size: 1em;

@@ -22,7 +22,7 @@
                 </div>
             </section>  
             <section class="menu-area">
-                <nav class="main-nav">
+                <nav class="main-nav" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'wptm001' ); ?>">
                     <?php
                     wp_nav_menu( array(
                         'theme_location' => 'primary',

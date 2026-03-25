@@ -7,6 +7,10 @@ function wptm001_load_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'wptm001_load_scripts' );
 
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'wptm001' ),
+    'footer' => __( 'Footer Menu', 'wptm001' )
+) );
 
 
 
