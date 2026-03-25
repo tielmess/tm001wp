@@ -29,7 +29,7 @@ Text Domain: tm001
   --text-secondary: #4a4a4a;
   --text-button: #ffffff;
   --font-light: #ffffff;
-  --border-color: #e2e8f0;
+  --border-color: #cecece;
   --shadow-color: rgba(0, 0, 0, 0.1);
   --accent-color: #454b35;
   --accent-hover: #1e2f26;
@@ -61,11 +61,11 @@ Text Domain: tm001
       --bg-nav-accent: #222222;
       --bg-white-faded: rgba(255, 255, 255, 0.3);
       --bg-white-faded-border: 1px dotted #f1f5f2;
-      --text-primary: #f7fafc;
+      --text-primary: #778169;
       --text-secondary: #e2e8f0;
       --text-button: #1a202c;
       --font-light: #ffffff;
-      --border-color: #4a4a4a;
+      --border-color: #d4d4d4;
       --shadow-color: rgba(0, 0, 0, 0.3);
       --accent-color: #454b35;
       --accent-hover: #1e2f26;
@@ -99,11 +99,11 @@ Text Domain: tm001
     --bg-nav-accent: #222222;
     --bg-white-faded: rgba(255, 255, 255, 0.3);
     --bg-white-faded-border: 1px dotted #f1f5f2;
-    --text-primary: #f7fafc;
+    --text-primary: #778169;
     --text-secondary: #e2e8f0;
     --text-button: #1a202c;
     --font-light: #ffffff;
-    --border-color: #4a4a4a;
+    --border-color: #d4d4d4;
     --shadow-color: rgba(0, 0, 0, 0.3);
     --accent-color: #454b35;
     --accent-hover: #1e2f26;
@@ -317,7 +317,7 @@ h4 {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-=HERO, SERVICES & UPDATES
+=HERO & SERVICES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .hero {
@@ -332,14 +332,12 @@ h4 {
   min-height: 600px;
 }
 
-.services,
-.updates {
+.services {
   padding: var(--spacer-6);
   background-color: var(--bg-secondary);
   margin-bottom: var(--spacer-6);
 }
-.services h2,
-.home.blog h2 {
+.services h2 {
   margin-bottom: var(--spacer-4);
 }
 .services ul {
@@ -350,32 +348,71 @@ h4 {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-=POSTS
+=UPDATES & POSTS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.updates {
+  padding: var(--spacer-6);
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacer-16);
+  align-items: start;
+}
+
+.card {
+  background: var(--bg-secondary);
+  border: 1px dotted var(--border-color);
+  padding: var(--spacer-12);
+  border-radius: 24px;
+  position: relative;
+}
+
+.card:nth-child(even) {
+  margin-top: var(--spacer-6);
+}
+
 .post {
-  margin-bottom: var(--spacer-8);
-}
-.post-title {
-  font-size: var(--font-size-2xl);
-  margin-bottom: var(--spacer-2);
-}
-.post-meta {
-  font-size: var(--font-size-sm);
+  margin-bottom: 0;
   color: var(--text-secondary);
+}
+
+.post-info {
   margin-bottom: var(--spacer-4);
 }
-.post-content {
-  font-size: var(--font-size-base);
-  line-height: 1.6;
+
+.post-title {
+  font-size: var(--font-size-2xl);
+  color: var(--text-primary);
+  margin-bottom: var(--spacer-2);
+}
+
+.post-meta,
+.post-categories,
+.post-tags,
+.post-comments {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
 }
 
 .post a {
-  color: var(--accent-color);
+  color: var(--text-primary);
   font-weight: bold;
   text-decoration: none;
 }
 .post a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 1070px) {
+  .card:nth-child(even) {
+    margin-top: 0;
+  }
+  .post {
+    margin-bottom: 0;
+  }
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
