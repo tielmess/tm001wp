@@ -20,7 +20,7 @@
                         if ( have_posts() ):
                             while( have_posts() ) : the_post();
                         ?>
-                            <article class="post">
+                            <article class="post card">
                                 <div class="entry-summary">
                                     <?php the_excerpt(); ?>
                                 </div>
