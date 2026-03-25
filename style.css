@@ -350,6 +350,35 @@ h4 {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=POSTS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.post {
+  margin-bottom: var(--spacer-8);
+}
+.post-title {
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--spacer-2);
+}
+.post-meta {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--spacer-4);
+}
+.post-content {
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+}
+
+.post a {
+  color: var(--accent-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+.post a:hover {
+  text-decoration: underline;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 =FOOTER
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
