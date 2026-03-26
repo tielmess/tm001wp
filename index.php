@@ -7,7 +7,7 @@
                         <h1>Welcome to WP-TM001 Theme</h1>
                         <p>This is a custom WordPress theme built for learning and experimentation.</p>
                     </section>
-                    <section class="services">
+                    <section class="services page-container">
                         <h2>Our Services</h2>
                         <ul>
                             <li>Custom Theme Development</li>

@@ -278,7 +278,7 @@ p {
   margin-block-end: var(--spacer-4);
   color: var(--text-secondary);
   line-height: 1.5;
-  max-width: 75ch;
+  max-width: 70ch;
   text-wrap: balance;
 }
 
@@ -329,6 +329,16 @@ p {
 }
 .menu-area nav ul li a:hover {
   text-decoration: underline;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=PAGES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.page-container {
+  padding: var(--spacer-8) var(--spacer-6);
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
