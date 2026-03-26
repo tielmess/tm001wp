@@ -24,13 +24,14 @@
                                 <article class="post card">
                                     <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                                     <div class="post-info">
-                                        <p class="post-meta">Posted on <?php the_time('M j, Y'); ?> by <?php the_author(); ?></p>
+                                        <p class="post-meta">Posted on <?php the_time('M j, Y'); ?> <br>by <?php the_author(); ?></p>
                                         <p class="post-categories">Categories: <?php the_category( ', ' ); ?></p>
                                         <p class="post-tags">Tags: <?php the_tags( '', ', ' ); ?></p>
                                         <p class="post-comments"><?php comments_number( 'No Comments', '1 Comment', '% Comments' ); ?></p>
                                     </div>
                                     <div class="entry-summary">
-                                        <?php the_excerpt(); ?>
+                                        <?php echo wp_trim_words(get_the_excerpt(), 15); ?>
+                                        <a href="<?php the_permalink(); ?>">Read&nbsp;More</a>
                                     </div>
                                 </article>
                                     <?php
