@@ -175,6 +175,7 @@ Text Domain: tm001
   padding: 0;
 }
 
+html,
 body,
 .wp-theme-wp-tm001 {
   font-family: var(--font-family-sans);
@@ -242,43 +243,57 @@ hr {
 =TYPOGRAPHY
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 h1,
+h1 a,
 h2,
+h2 a,
 h3,
+h3 a,
 h4,
+h4 a,
 h5,
-h6 {
+h5 a,
+h6,
+h6 a {
   color: var(--text-primary);
   margin-block-end: var(--spacer-4);
   line-height: 1.2;
   font-size: revert;
   font-weight: normal;
   text-wrap: balance;
+  text-decoration: none;
 }
 
-h1 {
+h1,
+h1 a {
   font-size: var(--font-size-3xl);
   color: var(--text-deep);
 }
-h2 {
+h2,
+h2 a {
   font-size: var(--font-size-2xl);
 }
-h3 {
+h3,
+h3 a {
   font-size: var(--font-size-xl);
 }
-h4 {
+h4,
+h4 a {
   font-size: var(--font-size-base);
 }
-h5 {
+h5,
+h5 a {
   font-size: var(--font-size-sm);
 }
-h6 {
+h6,
+h6 a {
   font-size: var(--font-size-xs);
 }
 p {
   margin-block-end: var(--spacer-4);
   color: var(--text-secondary);
+  font-size: var(--font-size-base);
   line-height: 1.5;
-  max-width: 70ch;
+  max-width: 72ch;
   text-wrap: balance;
 }
 
@@ -336,7 +351,9 @@ p {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .page-container {
-  padding: var(--spacer-8) var(--spacer-6);
+  padding: var(--spacer-6) var(--spacer-12);
+  /*width: fit-content;*/
+  min-width: 60ch;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -385,6 +402,8 @@ p {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .updates {
+  outline: 1px solid red; /* for development only */
+  max-width: 1200px;
   padding: var(--spacer-8);
 }
 
@@ -412,6 +431,16 @@ p {
   color: var(--text-secondary);
 }
 
+.post a {
+  color: var(--text-primary);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
 .post-title {
   font-size: var(--font-size-2xl);
   color: var(--text-primary);
@@ -432,6 +461,13 @@ p {
   color: var(--text-secondary);
 }
 
+.post-categories a,
+.post-tags a {
+  color: var(--accent-color);
+  font-weight: normal;
+  text-decoration: none;
+}
+
 .entry-summary {
   margin-top: var(--spacer-4);
   color: var(--text-secondary);
@@ -439,16 +475,6 @@ p {
 
 .entry-copy {
   color: var(--text-secondary);
-}
-
-.post a {
-  color: var(--text-primary);
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.post a:hover {
-  text-decoration: underline;
 }
 
 @media (max-width: 1070px) {
