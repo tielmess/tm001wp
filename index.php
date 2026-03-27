@@ -14,6 +14,13 @@
                             ?>
                                 <article class="post card">
                                     <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                                    <?php if ( has_post_thumbnail() ) : ?>
+                                        <div class="post-thumbnail">
+                                            <a href="<?php the_permalink(); ?>">
+                                                <?php the_post_thumbnail( 'medium' ); ?>
+                                            </a>
+                                        </div>
+                                    <?php endif; ?>
                                     <div class="post-info">
                                         <p class="post-meta">Posted on <?php the_time('M j, Y'); ?> <br>by <?php the_author(); ?></p>
                                         <p class="post-categories">Categories: <?php the_category( ', ' ); ?></p>
