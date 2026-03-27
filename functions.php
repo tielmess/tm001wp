@@ -26,8 +26,14 @@ function wptm001_config() {
     );
 
     add_theme_support( 'custom-header', $args );
-    add_theme_support( 'title-tag' );
+    add_theme_support( 'custon-logo', array(
+        'height' => 100,
+        'width' => 200,
+        'flex-width' => true,
+        'flex-height' => true,
+    ) );
     add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'title-tag' );
 };
 
 add_action( 'after_setup_theme', 'wptm001_config', 0 );   

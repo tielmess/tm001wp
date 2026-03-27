@@ -246,6 +246,11 @@ img {
   border-style: none;
 }
 
+.wp-post-image,
+.post-thumbnail {
+  margin-bottom: var(--spacer-4);
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 =TYPOGRAPHY
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
