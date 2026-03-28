@@ -26,7 +26,7 @@ function wptm001_config() {
     );
 
     add_theme_support( 'custom-header', $args );
-    add_theme_support( 'custon-logo', array(
+    add_theme_support( 'custom-logo', array (
         'height' => 100,
         'width' => 200,
         'flex-width' => true,
