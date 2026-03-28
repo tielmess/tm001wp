@@ -12,7 +12,13 @@
         <header>
             <section class="top-bar">
                 <div class="logo">
-                    <?php the_custom_logo(); ?>  
+                    <?php
+                    if( has_custom_logo() ) {
+                        the_custom_logo();
+                    } else {
+                        echo '<a href="' . home_url() . '">' . get_bloginfo( 'name' ) . '</a>';
+                    }   
+                    ?>
                 </div>
                 <div class="searchbox">
                     <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
