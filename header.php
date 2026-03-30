@@ -28,41 +28,14 @@
                 </div>
             </section>  
             <section class="menu-area">
-                <div class="controls">
-                    <!-- Main navigation with ARIA attributes -->
-                    <nav class="main-nav" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'wptm001' ); ?>">
-                        <div class="panel">
-                            <?php
-                                wp_nav_menu( array(
-                                    'theme_location' => 'primary',
-                                    'container' => false,
-                                    'menu_class' => 'nav-menu',
-                                ) );
-                            ?>
-                        </div>
-                    </nav>
-
-                    <button
-                    id="burger"
-                    class="burger"
-                    aria-label="Menu"
-                    aria-controls="site-nav"
-                    aria-expanded="false"
-                    >
-                    <span class="lines"><span></span></span>
-                    </button>
-
-                    <!-- Theme toggle button with ARIA attributes -->
-                    <!-- <button
-                    class="theme-toggle"
-                    id="theme-toggle"
-                    aria-label="Toggle dark mode"
-                    aria-pressed="false"
-                    type="button"
-                    >
-                    🌙
-                    </button> -->
-                </div>
-                <!-- /.controls -->
+                <nav class="main-nav" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'wptm001' ); ?>">
+                    <?php
+                    wp_nav_menu( array(
+                        'theme_location' => 'primary',
+                        'container' => false,
+                        'menu_class' => 'nav-menu',
+                    ) );
+                    ?>
+                </nav>
             </section>             
         </header>
