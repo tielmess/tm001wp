@@ -32,7 +32,7 @@ Text Domain: tm001
   --border-color: #cecece;
   --shadow-color: rgba(0, 0, 0, 0.1);
   --accent-color: #454b35;
-  --accent-hover: color-mix(in oklab, #1e2f26, #000000 20%);
+  --accent-hover: color-mix(in oklab, #869482, #5d6348 20%);
   --border-subtle: #d4d4d4; /* light grey dividers */
   --border-strong: #454b35; /* brand border / emphasis */
   --ring: 0 0 0 3px var(--accent-color);
@@ -68,7 +68,7 @@ Text Domain: tm001
       --border-color: #d4d4d4;
       --shadow-color: rgba(0, 0, 0, 0.3);
       --accent-color: #454b35;
-      --accent-hover: color-mix(in oklab, #1e2f26, #000000 20%);
+      --accent-hover: color-mix(in oklab, #869482, #5d6348 20%);
       --border-subtle: #404040; /* medium grey dividers */
       --border-strong: #6b9179; /* brand border / emphasis */
       --ring: 0 0 0 3px var(--accent-color);
@@ -106,7 +106,7 @@ Text Domain: tm001
     --border-color: #d4d4d4;
     --shadow-color: rgba(0, 0, 0, 0.3);
     --accent-color: #454b35;
-    --accent-hover: color-mix(in oklab, #1e2f26, #000000 20%);
+    --accent-hover: color-mix(in oklab, #869482, #5d6348 20%);
     --border-subtle: #404040; /* medium grey dividers */
     --border-strong: #6b9179; /* brand border / emphasis */
     --ring: 0 0 0 3px var(--accent-color);
@@ -378,7 +378,7 @@ nav a {
 nav a:hover,
 nav a:focus {
   color: var(--accent-color);
-  /* background: var(--bg-accent); */
+  background: var(--accent-hover);
   outline: 2px solid var(--accent-color);
   outline-offset: 2px;
 }
@@ -386,7 +386,7 @@ nav a:focus {
 /* Current page indicator */
 nav a[aria-current="page"] {
   color: var(--accent-color);
-  /* background: var(--bg-accent); */
+  background: #869482;
 }
 
 /* Burger button */
@@ -467,7 +467,7 @@ nav a[aria-current="page"] {
 /* Theme toggle button + burger menu */
 .theme-toggle,
 .burger {
-  background: var(--bg-accent);
+  background: color-mix(in oklab, #869482, #5d6348 20%);
   border: 1px solid var(--border-color);
   color: var(--text-primary);
   border-radius: var(--radius-md);
