@@ -20,11 +20,23 @@
                     }   
                     ?>
                 </div>
-                <div class="searchbox">
-                    <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-                        <input type="search" class="search-field" placeholder="Search..." value="<?php echo get_search_query(); ?>" name="s" />
-                        <button type="submit" class="search-submit">Search</button>
-                    </form>
+                <div class="controls">
+                  <div class="searchbox">
+                      <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+                          <input type="search" class="search-field" placeholder="Search..." value="<?php echo get_search_query(); ?>" name="s" />
+                          <button type="submit" class="search-submit">Search</button>
+                      </form>
+                  </div>
+                  <!-- Theme toggle button with ARIA attributes -->
+                  <button
+                    class="theme-toggle"
+                    id="theme-toggle"
+                    aria-label="Toggle dark mode"
+                    aria-pressed="false"
+                    type="button"
+                  >
+                    🌙
+                  </button>
                 </div>
             </section> 
             
@@ -59,16 +71,7 @@
               <span class="lines"><span></span></span>
             </button>
 
-            <!-- Theme toggle button with ARIA attributes -->
-            <button
-              class="theme-toggle"
-              id="theme-toggle"
-              aria-label="Toggle dark mode"
-              aria-pressed="false"
-              type="button"
-            >
-              🌙
-            </button>
+
           </div>
           <!-- /.controls -->
 
