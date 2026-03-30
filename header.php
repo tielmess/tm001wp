@@ -53,7 +53,7 @@
                     </button>
 
                     <!-- Theme toggle button with ARIA attributes -->
-                    <button
+                    <!-- <button
                     class="theme-toggle"
                     id="theme-toggle"
                     aria-label="Toggle dark mode"
@@ -61,7 +61,7 @@
                     type="button"
                     >
                     🌙
-                    </button>
+                    </button> -->
                 </div>
                 <!-- /.controls -->
             </section>             
