@@ -42,9 +42,8 @@
                                 ?>
                             </div>
                         </div>
-                        
+                        <?php get_sidebar(); ?>
                     </section>
-                    <?php get_sidebar(); ?>
                 </main>
             </div>
         </div>
