@@ -37,3 +37,16 @@ function wptm001_config() {
 };
 
 add_action( 'after_setup_theme', 'wptm001_config', 0 );   
+
+add_action( 'widgets_init', 'wptm001_widgets' );
+function wptm001_widgets() {
+    register_sidebar( array(
+        'name'          => __( 'Sidebar', 'wptm001' ),
+        'id'            => 'sidebar-1',
+        'description'   => __( 'Add widgets here to appear in your sidebar.', 'wptm001' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
+}   

@@ -32,9 +32,14 @@ Text Domain: tm001
   --border-color: #cecece;
   --shadow-color: rgba(0, 0, 0, 0.1);
   --accent-color: #454b35;
+  --accent-color-mid: oklch(from var(--accent-color) calc(l * 1.5) c h);
+  --accent-color-light: oklch(
+    from var(--accent-color) calc(l + 30) calc(c + 0.15) calc(h - 10)
+  );
   --accent-hover: color-mix(in oklab, #869482, #5d6348 20%);
+
   --border-subtle: #d4d4d4; /* light grey dividers */
-  --border-strong: #454b35; /* brand border / emphasis */
+  --border-strong: var(--accent-color); /* brand border / emphasis */
   --ring: 0 0 0 3px var(--accent-color);
   /* Success */
   --success-main: #2d5f5d; /* deep teal */
@@ -68,6 +73,11 @@ Text Domain: tm001
       --border-color: #d4d4d4;
       --shadow-color: rgba(0, 0, 0, 0.3);
       --accent-color: #454b35;
+      --accent-color-mid: oklch(from var(--accent-color) calc(l * 1.5) c h);
+      --accent-color-light: oklch(
+        from var(--accent-color) calc(l + 30) calc(c + 0.15) calc(h - 10)
+      );
+      --accent-hover: color-mix(in oklab, #869482, #5d6348 20%);
       --accent-hover: color-mix(in oklab, #869482, #5d6348 20%);
       --border-subtle: #404040; /* medium grey dividers */
       --border-strong: #6b9179; /* brand border / emphasis */
@@ -106,6 +116,11 @@ Text Domain: tm001
     --border-color: #d4d4d4;
     --shadow-color: rgba(0, 0, 0, 0.3);
     --accent-color: #454b35;
+    --accent-color-mid: oklch(from var(--accent-color) calc(l * 1.5) c h);
+    --accent-color-light: oklch(
+      from var(--accent-color) calc(l + 30) calc(c + 0.15) calc(h - 10)
+    );
+    --accent-hover: color-mix(in oklab, #869482, #5d6348 20%);
     --accent-hover: color-mix(in oklab, #869482, #5d6348 20%);
     --border-subtle: #404040; /* medium grey dividers */
     --border-strong: #6b9179; /* brand border / emphasis */
@@ -385,7 +400,7 @@ nav a:focus {
 /* Current page indicator */
 nav a[aria-current="page"] {
   color: var(--accent-color);
-  background: #869482;
+  background: var(--accent-color-mid);
 }
 
 /* Burger button */
@@ -595,16 +610,29 @@ nav a[aria-current="page"] {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .updates {
-  outline: 1px solid red; /* for development only */
-  max-width: 1200px;
+  outline: 1px solid green; /* for development only */
+  width: fit-content;
+  margin: 0 auto;
   padding: var(--spacer-8);
+  display: flex;
+  gap: var(--spacer-8);
 }
 
 .blog-grid {
+  outline: 1px solid red; /* for development only */
   display: grid;
+  width: fit-content;
+  min-width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--spacer-16);
+  gap: var(--spacer-8);
   align-items: start;
+}
+
+#secondary {
+  max-width: 300px;
+  border: 1px solid var(--border-color);
+  padding: var(--spacer-8);
+  border-radius: 24px;
 }
 
 .card {
