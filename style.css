@@ -278,7 +278,6 @@ h6 a {
 h1,
 h1 a {
   font-size: var(--font-size-3xl);
-  color: var(--text-deep);
 }
 h2,
 h2 a {
@@ -328,7 +327,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 0;
+  padding-bottom: var(--spacer-4);
 }
 .top-bar .logo a {
   color: var(--font-light);
@@ -514,7 +513,6 @@ nav a[aria-current="page"] {
 
   .theme-toggle {
     font-size: var(--font-size-xl);
-    padding-top: 1px;
   }
 
   .burger {
@@ -527,6 +525,10 @@ nav a[aria-current="page"] {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 =PAGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#content {
+  min-height: 80vh;
+}
 
 .page-container {
   padding: var(--spacer-6) var(--spacer-12);
@@ -687,7 +689,16 @@ nav a[aria-current="page"] {
   padding: 20px;
   text-align: center;
 }
+
+.footer-menu,
+.site-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer-menu {
+  margin-top: var(--spacer-8);
   margin-bottom: var(--spacer-2);
 }
 .footer-nav ul {
@@ -712,4 +723,5 @@ nav a[aria-current="page"] {
 .site-footer p {
   margin: 0;
   font-size: 1em;
+  color: var(--font-light);
 }
