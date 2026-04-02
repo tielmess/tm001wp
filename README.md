@@ -1,9 +1,11 @@
-# Testing setup of basic theme
+# Testing setup of basic Old School style theme
 
 Ongoing, with additions as time goes on.
 
 - Modular
 - Basic
+
+To eventually updated to modern style template.
 
 ## Essential Theme Files
 
