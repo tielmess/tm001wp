@@ -198,6 +198,7 @@ body,
   color: var(--text-primary);
   background-color: var(--bg-primary);
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
   min-width: 350px;
 }
 
@@ -542,7 +543,7 @@ nav a[aria-current="page"] {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 #content {
-  min-height: 80vh;
+  min-height: 80svh;
 }
 
 .page-container {
