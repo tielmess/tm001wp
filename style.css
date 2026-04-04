@@ -499,6 +499,7 @@ nav a[aria-current="page"] {
   outline: 2px solid var(--accent-color);
   outline-offset: 2px;
 }
+
 @media (max-width: 768px) {
   .top-bar {
     flex-direction: column-reverse;
@@ -617,7 +618,6 @@ nav a[aria-current="page"] {
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .updates {
-  /*outline: 1px solid green;  for development only */
   padding: var(--spacer-8);
   display: grid;
   grid-template-columns: 3.25fr 0.75fr;
@@ -625,7 +625,6 @@ nav a[aria-current="page"] {
 }
 
 .blog-grid {
-  /* outline: 1px solid red;  for development only */
   display: grid;
   /* width: fit-content; */
   /* max-width: 100%; */
@@ -635,6 +634,7 @@ nav a[aria-current="page"] {
 }
 
 .widget-area {
+  min-width: 200px;
   height: 100%;
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
