@@ -499,6 +499,12 @@ nav a[aria-current="page"] {
   outline: 2px solid var(--accent-color);
   outline-offset: 2px;
 }
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 
 /* ≥ 768px: show inline menu, hide burger */
 @media (min-width: 768px) {
