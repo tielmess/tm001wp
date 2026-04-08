@@ -556,7 +556,7 @@ nav a[aria-current="page"] {
 .page-container {
   padding: var(--spacer-6) var(--spacer-12);
   /*width: fit-content;*/
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -729,6 +729,8 @@ nav a[aria-current="page"] {
 
 .entry-copy {
   color: var(--text-secondary);
+  max-width: 75ch;
+  margin: 0 auto;
 }
 
 @media (max-width: 1070px) {
