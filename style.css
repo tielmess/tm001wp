@@ -624,13 +624,30 @@ nav a[aria-current="page"] {
   gap: var(--spacer-8);
 }
 
-.blog-grid {
-  display: grid;
-  /* width: fit-content; */
-  /* max-width: 100%; */
-  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+/* .blog-grid {
+  display: grid; */
+/* width: fit-content; */
+/* max-width: 100%; */
+/* grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: var(--spacer-8);
   align-items: start;
+} */
+
+/* Base styles for the grid */
+.blog-grid {
+  display: grid;
+  gap: var(--spacer-8);
+  align-items: start;
+}
+
+/* Logic for the Updates section (Larger cards) */
+.updates .blog-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+}
+
+/* Logic for the Page Container (Smaller cards) */
+.page-container .blog-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
 }
 
 .widget-area {
