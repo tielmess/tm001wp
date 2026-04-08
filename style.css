@@ -291,6 +291,9 @@ h6 a {
   text-decoration: none;
 }
 
+.hero h1 {
+  color: var(--text-deep);
+}
 h1,
 h1 a {
   font-size: var(--font-size-3xl);
