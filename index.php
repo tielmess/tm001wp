@@ -29,7 +29,7 @@
                                             <p class="post-comments"><?php comments_number( 'No Comments', '1 Comment', '% Comments' ); ?></p>
                                         </div>
                                         <div class="entry-summary">
-                                            <?php echo wp_trim_words(get_the_excerpt(), 15); ?>
+                                            <?php echo wp_trim_words(get_the_excerpt(), 20); ?>
                                             <a href="<?php the_permalink(); ?>">Read&nbsp;More</a>
                                         </div>
                                     </article>
