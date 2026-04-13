@@ -673,14 +673,19 @@ nav a[aria-current="page"] {
 
 .card {
   background: var(--bg-secondary);
-  border: 1px dotted var(--border-color);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--border-color) 3px 4px 3px 3px;
   padding: var(--spacer-8);
   border-radius: 24px;
   position: relative;
 }
 
 .card:nth-child(even) {
-  margin-top: var(--spacer-8);
+  margin-top: var(--spacer-12);
+}
+.card:hover {
+  box-shadow: var(--accent-hover) 5px 6px 5px 5px;
+  border-color: var(--accent-color);
 }
 
 .post {
@@ -734,6 +739,22 @@ nav a[aria-current="page"] {
   color: var(--text-secondary);
   max-width: 75ch;
   margin: 0 auto;
+}
+
+.wp-block-archives-list a {
+  color: var(--accent-color);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.cat-item a {
+  color: var(--accent-color);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 @media (max-width: 1070px) {
