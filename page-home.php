@@ -46,7 +46,10 @@
                                         <p class="post-tags">Tags: <?php the_tags( '', ', ' ); ?></p>
                                         <p class="post-comments"><?php comments_number( 'No Comments', '1 Comment', '% Comments' ); ?></p>
                                         <div class="entry-summary">
-                                            <?php the_excerpt(); ?>
+                                            <?php echo wp_trim_words(get_the_excerpt(), 20); ?>
+                                        </div>
+                                        <div class="read-more">
+                                            <a class="read-more-btn" href="<?php the_permalink(); ?>">Read&nbsp;the full post <span class="sr-only"><?php the_title(); ?></span><span class="arrow">&rArr;</span></a>
                                         </div>
                                     </article>
                                     <?php
