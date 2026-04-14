@@ -674,7 +674,7 @@ nav a[aria-current="page"] {
 .card {
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
-  box-shadow: var(--border-color) 3px 4px 3px 3px;
+  box-shadow: var(--border-color) 2px 3px 3px 3px;
   padding: var(--spacer-8);
   border-radius: 24px;
   position: relative;
