@@ -78,7 +78,6 @@ Text Domain: tm001
         from var(--accent-color) calc(l + 30) calc(c + 0.15) calc(h - 10)
       );
       --accent-hover: color-mix(in oklab, #869482, #5d6348 20%);
-      --accent-hover: color-mix(in oklab, #869482, #5d6348 20%);
       --border-subtle: #404040; /* medium grey dividers */
       --border-strong: #6b9179; /* brand border / emphasis */
       --ring: 0 0 0 3px var(--accent-color);
@@ -120,7 +119,6 @@ Text Domain: tm001
     --accent-color-light: oklch(
       from var(--accent-color) calc(l + 30) calc(c + 0.15) calc(h - 10)
     );
-    --accent-hover: color-mix(in oklab, #869482, #5d6348 20%);
     --accent-hover: color-mix(in oklab, #869482, #5d6348 20%);
     --border-subtle: #404040; /* medium grey dividers */
     --border-strong: #6b9179; /* brand border / emphasis */
@@ -371,9 +369,6 @@ p {
   color: var(--font-light);
   text-decoration: none;
   font-size: 1.2em;
-}
-.menu-area nav ul li a:hover {
-  text-decoration: underline;
 }
 
 /* Navigation with ARIA attributes */
@@ -674,7 +669,7 @@ nav a[aria-current="page"] {
 .card {
   background: var(--bg-secondary);
   border: 1px solid var(--border-color);
-  box-shadow: var(--border-color) 2px 3px 3px 3px;
+  box-shadow: var(--border-color) 2px 2px 2px 2px;
   padding: var(--spacer-8);
   border-radius: 24px;
   position: relative;
