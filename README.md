@@ -1,4 +1,4 @@
-# Testing setup of basic Old School style theme
+# WordPress: Testing setup of basic Old School style theme
 
 Ongoing, with additions as time goes on.
 
