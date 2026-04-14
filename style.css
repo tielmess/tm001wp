@@ -735,6 +735,29 @@ nav a[aria-current="page"] {
   color: var(--text-secondary);
 }
 
+.read-more {
+  margin-top: var(--spacer-4);
+  text-align: right;
+}
+
+.read-more-btn {
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  text-decoration: underline;
+}
+
+.arrow {
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+.read-more-btn:hover .arrow {
+  transform: translateX(5px);
+}
+
 .entry-copy {
   color: var(--text-secondary);
   max-width: 75ch;

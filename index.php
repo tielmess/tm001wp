@@ -30,7 +30,9 @@
                                         </div>
                                         <div class="entry-summary">
                                             <?php echo wp_trim_words(get_the_excerpt(), 20); ?>
-                                            <a href="<?php the_permalink(); ?>">Read&nbsp;More</a>
+                                        </div>
+                                        <div class="read-more">
+                                            <a class="read-more-btn" href="<?php the_permalink(); ?>">Read&nbsp;the full post <span class="sr-only"><?php the_title(); ?></span><span class="arrow">&rArr;</span></a>
                                         </div>
                                     </article>
                                         <?php
