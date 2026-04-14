@@ -38,44 +38,41 @@
                     🌙
                   </button>
                 </div>
-            </section> 
+            </section><!-- /.top-bar -->
             
             
             <section class="menu-area">
-          <div class="controls">
-            <!-- Main navigation with ARIA attributes -->
-            <nav
-              id="site-nav"
-              role="navigation"
-              aria-label="Main navigation"
-              hidden
-            >
-              <div class="panel">
-                <?php
-                  wp_nav_menu( array(
-                      'theme_location' => 'primary',
-                      'container' => false,
-                      'menu_class' => 'panel',
-                  ) );
-                ?>
-              </div>
-            </nav>
+              <div class="controls">
+                <!-- Main navigation with ARIA attributes -->
+                <nav
+                  id="site-nav"
+                  role="navigation"
+                  aria-label="Main navigation"
+                  hidden
+                >
+                  <div class="panel">
+                    <?php
+                      wp_nav_menu( array(
+                          'theme_location' => 'primary',
+                          'container' => false,
+                          'menu_class' => 'panel',
+                      ) );
+                    ?>
+                  </div>
+                </nav>
 
-            <button
-              id="burger"
-              class="burger"
-              aria-label="Menu"
-              aria-controls="site-nav"
-              aria-expanded="false"
-            >
-              <span class="lines"><span></span></span>
-            </button>
-
-
-          </div>
-          <!-- /.controls -->
+                <button
+                  id="burger"
+                  class="burger"
+                  aria-label="Menu"
+                  aria-controls="site-nav"
+                  aria-expanded="false"
+                >
+                  <span class="lines"><span></span></span>
+                </button>
 
 
-            </section>             
+              </div><!-- /.controls -->
+            </section><!-- /.menu-area -->           
         </header>
 
