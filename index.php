@@ -35,12 +35,20 @@
                                             <a class="read-more-btn" href="<?php the_permalink(); ?>">Read&nbsp;the full post <span class="sr-only"><?php the_title(); ?></span><span class="arrow">&rArr;</span></a>
                                         </div>
                                     </article>
-                                        <?php
+                                    <?php
                                     endwhile;
                                     wp_reset_postdata();
                                 else :
                                     echo '<p>No recent posts found.</p>';
                                 endif;
+                                ?>
+                            </div>
+                            <div class="pagination">
+                                <?php
+                                the_posts_pagination( array(
+                                    'prev_text' => '&laquo; Newer posts',
+                                    'next_text' => 'Older posts &raquo;',
+                                ) );
                                 ?>
                             </div>
                         </div>

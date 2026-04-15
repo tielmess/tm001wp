@@ -326,7 +326,7 @@ p {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-=TOP-BAR & NAV
+=TOP-BAR, NAV & PAGINATION
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .top-bar,
 .menu-area {
@@ -542,6 +542,44 @@ nav a[aria-current="page"] {
   }
 }
 
+.pagination {
+  display: flex;
+  justify-content: space-evenly;
+  gap: var(--spacer-4);
+  margin-top: var(--spacer-8);
+}
+
+.pagination .page-numbers {
+  padding: var(--spacer-1) var(--spacer-2);
+}
+
+.pagination .nav-links {
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.pagination .nav-links a {
+  font-weight: normal;
+}
+
+.pagination .nav-links a:hover,
+.pagination .nav-links a:focus {
+  color: inherit;
+  background: none;
+  text-decoration: underline;
+}
+
+.pagination .nav-links a:hover {
+  text-decoration: underline;
+  outline: none;
+}
+
+.pagination .nav-links a:focus {
+  outline: 2px solid var(--accent-color);
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 =PAGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -672,6 +710,7 @@ nav a[aria-current="page"] {
   padding: var(--spacer-8);
   border-radius: 24px;
   position: relative;
+  max-width: 500px;
 }
 
 .card:nth-child(even) {
