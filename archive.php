@@ -1,0 +1,66 @@
+<?php get_header(); ?>
+    <div class="page-header">
+        <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+    </div>
+        <div id="content" class="site-content">
+            <div id="primary" class="content-area">
+                <main id="main" class="site-main">
+                    <section class="updates">
+                        <div>
+                            <!-- <h1><?php echo single_term_title(); ?></h1> -->
+                            <?php the_archive_title( '<h1 class="archive-title">', '</h1>' ); ?>
+                            <div class="archive-description">
+                                <?php the_archive_description( '<p>', '</p>' ); ?>
+                            </div>
+
+                            <div class="archive-grid">
+                                <?php
+                                if ( have_posts() ):
+                                    while( have_posts() ) : the_post();
+                                ?>
+                                    <article class="post card">
+                                        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                                        <?php if ( has_post_thumbnail() ) : ?>
+                                            <div class="post-thumbnail">
+                                                <a href="<?php the_permalink(); ?>">
+                                                    <?php the_post_thumbnail( 'medium' ); ?>
+                                                </a>
+                                            </div>
+                                        <?php endif; ?>
+                                        <div class="post-info">
+                                            <p class="post-meta">Posted on <?php the_time('M j, Y'); ?> <br>by <?php the_author(); ?></p>
+                                            <p class="post-categories">Categories: <?php the_category( ', ' ); ?></p>
+                                            <p class="post-tags">Tags: <?php the_tags( '', ', ' ); ?></p>
+                                            <p class="post-comments"><?php comments_number( 'No Comments', '1 Comment', '% Comments' ); ?></p>
+                                        </div>
+                                        <div class="entry-summary">
+                                            <?php echo wp_trim_words(get_the_excerpt(), 20); ?>
+                                        </div>
+                                        <div class="read-more">
+                                            <a class="read-more-btn" href="<?php the_permalink(); ?>">Read&nbsp;the full post <span class="sr-only"><?php the_title(); ?></span><span class="arrow">&rArr;</span></a>
+                                        </div>
+                                    </article>
+                                    <?php
+                                    endwhile;
+                                    wp_reset_postdata();
+                                else :
+                                    echo '<p>No recent posts found.</p>';
+                                endif;
+                                ?>
+                            </div>
+                            <div class="pagination">
+                                <?php
+                                the_posts_pagination( array(
+                                    'prev_text' => '&laquo; Newer posts',
+                                    'next_text' => 'Older posts &raquo;',
+                                ) );
+                                ?>
+                            </div>
+                        </div>
+                        <?php get_sidebar(); ?>
+                    </section>
+                </main>
+            </div>
+        </div>
+
+<?php get_footer(); ?>

@@ -674,14 +674,16 @@ nav a[aria-current="page"] {
 } */
 
 /* Base styles for the grid */
-.blog-grid {
+.blog-grid,
+.archive-grid {
   display: grid;
   gap: var(--spacer-8);
   align-items: start;
 }
 
 /* Logic for the Updates section (Larger cards) */
-.updates .blog-grid {
+.updates .blog-grid,
+.updates .archive-grid {
   grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
 }
 
