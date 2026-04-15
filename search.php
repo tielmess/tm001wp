@@ -36,7 +36,8 @@ get_header(); ?>
                                 </div>
                             </article>
                     <?php
-                        endwhile;       
+                        endwhile;  
+                        the_posts_pagination();     
                     ?>
                 </main>
             </div>

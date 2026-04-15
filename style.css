@@ -580,6 +580,11 @@ nav a[aria-current="page"] {
   outline: 2px solid var(--accent-color);
 }
 
+.pagination.single {
+  /* border-bottom: 1px solid var(--border-color); */
+  padding-bottom: var(--spacer-4);
+  margin-bottom: var(--spacer-8);
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 =PAGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

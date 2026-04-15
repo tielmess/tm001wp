@@ -25,21 +25,28 @@ get_header(); ?>
                                 <h1><?php the_title(); ?></h1>
                                 <div class="post-info">
                                     <p class="post-meta">Posted on <?php the_time('M j, Y'); ?> <br>by <?php the_author(); ?></p>
-                                </div>
-                                <div class="entry-copy">
-                                    <?php the_content() ?>
-                                </div>
-                                <div class="post-info">
                                     <p class="post-categories">Categories: <?php the_category( ', ' ); ?></p>
                                     <p class="post-tags">Tags: <?php the_tags( '', ', ' ); ?></p>
                                     <p class="post-comments"><?php comments_number( 'No Comments', '1 Comment', '% Comments' ); ?></p>
                                 </div>
+                                <div class="entry-copy">
+                                    <?php the_content() ?>
+                                </div>
                             </article>
+
+                            <div class="pagination single">
+                                <div class="newer-post">
+                                    <?php next_post_link( '%link', '&laquo; Newer Post' ); ?>
+                                </div>
+                                <div class="older-post">
+                                    <?php previous_post_link( '%link', 'Older Post &raquo;' ); ?>
+                                </div>
+                            </div>
                     <?php
                     // If comments are open or we have at least one comment, load up the comment template.
-if ( comments_open() || get_comments_number() ) :
-	comments_template();
-endif;
+                    if ( comments_open() || get_comments_number() ) :
+                        comments_template();
+                    endif;
 
 
                         endwhile;       
