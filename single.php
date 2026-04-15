@@ -31,6 +31,12 @@ get_header(); ?>
                                 </div>
                                 <div class="entry-copy">
                                     <?php the_content() ?>
+                                    <?php
+                                        wp_link_pages( array(
+                                            'before' => '<div class="page-links">' . __( 'Pages:', 'twentysixteen' ),
+                                            'after'  => '</div>',
+                                        ) );
+                                    ?>
                                 </div>
                             </article>
 
