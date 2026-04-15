@@ -21,12 +21,10 @@
                     ?>
                 </div>
                 <div class="controls">
-                  <div class="searchbox">
-                      <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
-                          <input type="search" class="search-field" placeholder="Search..." value="<?php echo get_search_query(); ?>" name="s" />
-                          <button type="submit" class="search-submit">Search</button>
-                      </form>
-                  </div>
+                  <!-- Search form with ARIA attributes -->
+                  <!--<div class="searchbox"> 
+                    <?php get_search_form(); ?>
+                  </div>-->
                   <!-- Theme toggle button with ARIA attributes -->
                   <button
                     class="theme-toggle"

@@ -482,7 +482,7 @@ nav a[aria-current="page"] {
 .burger {
   background: color-mix(in oklab, #869482, #5d6348 20%);
   border: 1px solid var(--border-color);
-  color: var(--text-primary);
+  /* color: var(--text-primary); */
   border-radius: var(--radius-md);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -500,7 +500,7 @@ nav a[aria-current="page"] {
 
 @media (max-width: 768px) {
   .top-bar {
-    flex-direction: column-reverse;
+    /*flex-direction: column-reverse;*/
     align-items: center;
   }
 }
@@ -524,8 +524,8 @@ nav a[aria-current="page"] {
 /* ≤ 767px */
 @media (max-width: 768px) {
   .controls {
-    background: var(--bg-accent);
-    border: 1px solid var(--border-color);
+    /* background: var(--bg-accent);
+    border: 1px solid var(--border-color); */
     border-radius: var(--radius-md);
     cursor: pointer;
     transition: all 0.3s ease;
@@ -538,8 +538,7 @@ nav a[aria-current="page"] {
 
   .burger {
     font-size: var(--font-size-sm);
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding: 15px 20px;
   }
 }
 
