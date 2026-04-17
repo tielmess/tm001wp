@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div id="content" class="site-content">
     <div id="nofind" class="content-area">
         <main id="main" class="site-main">
             <section class="error-404 not-found">
@@ -28,4 +28,5 @@
             </section><!-- .error-404 -->
         </main><!-- #main -->
     </div><!-- #nofind --> 
+</div><!-- #content -->
 <?php get_footer(); ?>
