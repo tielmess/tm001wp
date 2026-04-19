@@ -32,6 +32,16 @@ function wptm001_config() {
         'flex-width' => true,
         'flex-height' => true,
     ) );
+    add_theme_support('automatic-feed-links');
+    add_theme_support( 'html5', array(
+        'search-form',
+        'comment-form',
+        'comment-list',
+        'gallery',
+        'caption',
+        'style',
+        'script'
+    ) );
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'title-tag' );
 };
@@ -50,3 +60,10 @@ function wptm001_widgets() {
         'after_title'   => '</h2>',
     ) );
 }   
+
+if ( ! function_exists( 'wp_body_open' ) ) {
+    function wp_body_open() {
+        do_action( 'wp_body_open' );
+    }
+}
+
