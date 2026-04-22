@@ -39,6 +39,7 @@ get_header(); ?>
                                             ) );
                                         ?>
                                     </div>
+                                    <hr>
                                 </article>
 
                                 <div class="pagination single">

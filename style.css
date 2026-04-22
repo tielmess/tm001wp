@@ -992,3 +992,10 @@ a img.aligncenter {
   z-index: 100000;
   /* Above WP toolbar. */
 }
+
+hr {
+  border: 0;
+  height: 1px;
+  margin: 2rem 0;
+  background: linear-gradient(90deg, transparent, #90a49a, transparent);
+}
