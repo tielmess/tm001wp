@@ -836,6 +836,18 @@ nav a[aria-current="page"] {
   }
 }
 
+.comment-author,
+.comment-author a {
+  font-weight: bold;
+  color: var(--text-primary);
+}
+.comment-author a {
+  text-decoration: none;
+}
+.comment-author a:hover {
+  text-decoration: underline;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 =FOOTER
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
