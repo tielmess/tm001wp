@@ -848,6 +848,19 @@ nav a[aria-current="page"] {
   text-decoration: underline;
 }
 
+.comment-metadata {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--spacer-2);
+}
+.comment-metadata a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.comment-metadata a:hover {
+  text-decoration: underline;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 =FOOTER
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
