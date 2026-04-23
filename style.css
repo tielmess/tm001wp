@@ -772,7 +772,7 @@ nav a[aria-current="page"] {
 
 .post-categories a,
 .post-tags a {
-  color: var(--accent-color);
+  color: var(--text-primary);
   font-weight: normal;
   text-decoration: none;
 }
@@ -812,7 +812,7 @@ nav a[aria-current="page"] {
 }
 
 .wp-block-archives-list a {
-  color: var(--accent-color);
+  color: var(--text-primary);
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -820,7 +820,7 @@ nav a[aria-current="page"] {
 }
 
 .cat-item a {
-  color: var(--accent-color);
+  color: var(--text-primary);
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -850,11 +850,11 @@ nav a[aria-current="page"] {
 
 .comment-metadata {
   font-size: var(--font-size-sm);
-  color: var(--text-secondary);
+  color: var(--text-primary);
   margin-bottom: var(--spacer-2);
 }
 .comment-metadata a {
-  color: var(--accent-color);
+  color: var(--text-primary);
   text-decoration: none;
 }
 .comment-metadata a:hover {
@@ -864,7 +864,7 @@ nav a[aria-current="page"] {
 .comment-metadata > .edit-link,
 .reply > a.comment-reply-link {
   font-size: var(--font-size-base);
-  color: var(--accent-color);
+  color: var(--text-primary);
   text-decoration: none;
   padding-left: 10px;
 }
@@ -872,6 +872,15 @@ nav a[aria-current="page"] {
   display: block;
   padding-left: 0;
   margin-bottom: 2em;
+}
+.logged-in-as {
+  font-size: var(--font-size-base);
+  color: var(--text-primary);
+  margin-top: var(--spacer-4);
+}
+.logged-in-as a {
+  color: var(--text-primary);
+  text-decoration: underline;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
