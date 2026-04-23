@@ -592,6 +592,14 @@ nav a[aria-current="page"] {
   padding-bottom: var(--spacer-4);
   margin-bottom: var(--spacer-8);
 }
+
+.pagination.single a {
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.25em;
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 =PAGES
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
