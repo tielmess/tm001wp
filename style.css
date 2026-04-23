@@ -861,6 +861,19 @@ nav a[aria-current="page"] {
   text-decoration: underline;
 }
 
+.comment-metadata > .edit-link,
+.reply > a.comment-reply-link {
+  font-size: var(--font-size-base);
+  color: var(--accent-color);
+  text-decoration: none;
+  padding-left: 10px;
+}
+.reply > a.comment-reply-link {
+  display: block;
+  padding-left: 0;
+  margin-bottom: 2em;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 =FOOTER
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
