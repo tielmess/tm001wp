@@ -3,12 +3,15 @@
         <div id="content" class="site-content">
             <div id="primary" class="content-area">
                 <main id="main" class="site-main">
-                    <section class="hero" style="background-image: url('<?php header_image(); ?>'); background-size: cover; background-position: right;">
-                        <div class="overlay" style="width: fit-content; background-color: rgba(0, 0, 0, 0.3); padding: 50px; color: #fff; text-align: left; border-radius: 10px;">
+                    <section class="hero" style="background-image: url('<?php header_image(); ?>'); background-size: cover; background-position: left;">
+                        <div class="overlay" style="width: fit-content; background-color: rgba(0, 0, 0, 0.1); padding: 30px 50px; color: #fff; text-align: left; border-radius: 10px;">
                             <div class="">
-                                <h1>Welcome to WP-TM001 Theme</h1>
+                                <h1><?php echo get_theme_mod( 'set_hero_title', 'Welcome to WP-TM001 Theme' ); ?></h1>
+                                <p><?php echo get_theme_mod( 'set_hero_text', 'This is a custom WordPress theme built for learning and experimentation.' ); ?></p>
+                                <a class="hero-btn" href="<?php echo get_theme_mod( 'set_hero_button_link', '#' ); ?>"><?php echo get_theme_mod( 'set_hero_button_text', 'Learn More' ); ?></a>
+                                <!-- <h1>Welcome to WP-TM001 Theme</h1>
                                 <p>This is a custom WordPress theme built for learning and experimentation.</p>
-                                <p>Bacon ipsum dolor amet strip steak hamburger chicken sausage, ham porchetta doner. Ground round sirloin meatloaf burgdoggen, alcatra sausage chicken shank shankle ball tip spare ribs drumstick flank boudin. Chicken boudin tongue pork belly buffalo, spare ribs pork chop. Flank strip steak turkey meatball pork loin turducken chicken kevin cupim chislic pork ribeye. Ham hock jerky shank, meatloaf t-bone ball tip ham tenderloin spare ribs pork loin.</p>
+                                <p>Bacon ipsum dolor amet strip steak hamburger chicken sausage, ham porchetta doner. Ground round sirloin meatloaf burgdoggen, alcatra sausage chicken shank shankle ball tip spare ribs drumstick flank boudin. Chicken boudin tongue pork belly buffalo, spare ribs pork chop.</p> -->
                             </div>
                         </div>                        
                     </section>

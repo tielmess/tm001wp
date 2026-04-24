@@ -637,6 +637,21 @@ nav a[aria-current="page"] {
   max-width: 65ch;
 }
 
+.hero-btn {
+  display: inline-block;
+  margin-top: var(--spacer-6);
+  padding: var(--spacer-2) var(--spacer-4);
+  background-color: var(--accent-color);
+  color: var(--font-light);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: var(--radius-md);
+  transition: background-color 0.3s ease;
+}
+.hero-btn:hover {
+  background-color: var(--accent-hover);
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 =HEADER IMAGE
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

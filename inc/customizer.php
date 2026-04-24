@@ -22,5 +22,61 @@ function wp_tm001_customize_register( $wp_customize ) {
         'settings'   => 'set_copyright',
         'type'       => 'text',
     ) );
+
+    $wp_customize->add_section( 'sec_hero' , array(
+        'title'      => __( 'Hero Section', 'wp_tm001' ),
+        'priority'   => 30,
+        'description' => 'Customize the hero section of your theme',
+    ) );
+
+    $wp_customize->add_setting( 'set_hero_title' , array(
+        'default'   => 'Welcome to WP-TM001 Theme',
+        'transport' => 'refresh',
+        'sanitize_callback' => 'sanitize_text_field',
+    ) );
+    $wp_customize->add_control( 'set_hero_title', array(
+        'label'      => __( 'Hero Title', 'wp_tm001' ),
+        'section'    => 'sec_hero',
+        'settings'   => 'set_hero_title',
+        'type'       => 'text',
+    ) );
+    $wp_customize->add_setting( 'set_hero_text' , array(
+        'default'   => 'This is a custom WordPress theme built for learning and experimentation.',
+        'transport' => 'refresh',
+        'sanitize_callback' => 'sanitize_textarea_field',
+    ) );
+    $wp_customize->add_control( 'set_hero_text', array(
+        'label'      => __( 'Hero Text', 'wp_tm001' ),
+        'section'    => 'sec_hero',
+        'settings'   => 'set_hero_text',
+        'type'       => 'textarea',
+    ) );
+
+    $wp_customize->add_setting( 'set_hero_button_text' , array(
+        'default'   => 'Learn More',
+        'transport' => 'refresh',
+        'sanitize_callback' => 'sanitize_text_field',
+    ) );        
+
+    $wp_customize->add_control( 'set_hero_button_text', array(
+        'label'      => __( 'Hero Button Text', 'wp_tm001' ),
+        'section'    => 'sec_hero',
+        'settings'   => 'set_hero_button_text',
+        'type'       => 'text',
+    ) );
+
+    $wp_customize->add_setting( 'set_hero_button_link' , array(
+        'type' => 'theme_mod',  
+        'default'   => '#',
+        'transport' => 'refresh',
+        'sanitize_callback' => 'esc_url_raw',
+    ) );
+    $wp_customize->add_control( 'set_hero_button_link', array(
+        'label'      => __( 'Hero Button Link', 'wp_tm001' ),
+        'section'    => 'sec_hero',
+        'settings'   => 'set_hero_button_link',
+        'type'       => 'text',
+    ) );    
+
 }   
 add_action( 'customize_register', 'wp_tm001_customize_register' );
