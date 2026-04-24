@@ -11,7 +11,7 @@
                 </nav>
             </div>          
             <div class="site-info">  
-                <p>&copy; <?php echo date('Y'); ?> WP-TM001 Theme. All rights reserved.</p>
+                <p><?php echo get_theme_mod( 'set_copyright', 'Copyright X WP_TM001. All rights reserved.' ); ?></p>
             </div>
         </footer>
     </div>

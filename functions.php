@@ -1,5 +1,7 @@
 <?php
 
+require get_template_directory() . '/inc/customizer.php';
+
 function wptm001_load_scripts() {
     // Enqueue the main stylesheet
     wp_enqueue_style( 'wptm001-style', get_stylesheet_uri(), array(), '1.0', 'all' );
