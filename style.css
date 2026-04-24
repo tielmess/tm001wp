@@ -715,12 +715,12 @@ nav a[aria-current="page"] {
 /* Logic for the Updates section (Larger cards) */
 .updates .blog-grid,
 .updates .archive-grid {
-  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
 }
 
 /* Logic for the Page Container (Smaller cards) */
 .page-container .blog-grid {
-  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
 }
 
 .widget-area {

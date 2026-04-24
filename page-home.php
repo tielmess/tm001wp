@@ -44,8 +44,10 @@
                         <h2>Latest Blog Posts</h2>
                         <div class="blog-grid">
                             <?php
+
+                            $home_posts_per_page = get_theme_mod( 'set_posts_per_page', 5 );
                             $recent_posts = new WP_Query( array(
-                                'posts_per_page' => 3,
+                                'posts_per_page' => $home_posts_per_page,
                                 'post_status' => 'publish',
                             ) );
                             if ( $recent_posts->have_posts() ) :
