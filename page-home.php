@@ -9,9 +9,9 @@
                     $hero_button_text = get_theme_mod( 'set_hero_button_text', 'Learn More' );
                     $hero_button_link = get_theme_mod( 'set_hero_button_link', '#' );   
                     $hero_background =  wp_get_attachment_url( get_theme_mod( 'set_hero_background' ) );
-                    $hero_height = get_theme_mod( 'set_hero_height', 500 );     
+                    $hero_height = get_theme_mod( 'set_hero_height', 400 );     
                     ?>
-                    <section class="hero" style="background-image: url('<?php echo $hero_background; ?>'); background-size: cover; background-position: left; outline: 1px solid rgba(0, 0, 0, 0.1); height: <?php echo $hero_height; ?>px;">
+                    <section class="hero" style="background-image: url('<?php echo $hero_background; ?>'); background-size: cover; background-position: center; outline: 1px solid rgba(0, 0, 0, 0.1); height: <?php echo $hero_height; ?>px;">
                         <div class="overlay" style="width: fit-content; background-color: rgba(0, 0, 0, 0.05); padding: 30px 50px; color: #fff; text-align: left; border-radius: 10px;">
                             <div class="">
                                 <h1><?php echo $hero_title; ?></h1>

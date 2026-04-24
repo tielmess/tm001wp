@@ -645,11 +645,12 @@ nav a[aria-current="page"] {
   color: var(--font-light);
   text-decoration: none;
   font-weight: bold;
+  border: 2px solid var(--accent-color);
   border-radius: var(--radius-md);
   transition: background-color 0.3s ease;
 }
 .hero-btn:hover {
-  background-color: var(--accent-hover);
+  background-color: var(--accent-color-mid);
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
