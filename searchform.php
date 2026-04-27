@@ -18,9 +18,9 @@
 
 <form role="search" method="get" id="searchform" class="searchform" action="<?php echo esc_url( home_url( '/' ) ) ?>" >
     <div>
-        <label for="s">Search for:</label>
+        <label for="s"><?php _e( 'Search for', 'wptm001' ); ?>:</label>
         <input type="text" name="s" id="s" value="<?php the_search_query(); ?>" />
-        <input type="submit" id="searchsubmit" value="Search" />
+        <input type="submit" id="searchsubmit" value="<?php _e( 'Search', 'wptm001' ); ?>" />
     </div>	
 </form>
     

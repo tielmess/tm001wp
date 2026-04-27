@@ -12,6 +12,11 @@ add_action( 'wp_enqueue_scripts', 'wptm001_load_scripts' );
 
 
 function wptm001_config() {
+
+    $textdomain = 'wptm001';
+    load_theme_textdomain( $textdomain, get_template_directory() . '/languages' );
+    
+
     register_nav_menus( array(
         'primary' => __( 'Primary Menu', 'wptm001' ),
         'footer' => __( 'Footer Menu', 'wptm001' )

@@ -24,15 +24,15 @@ get_header(); ?>
                             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> 
                                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                                 <div class="post-info">
-                                    <p class="post-meta">Posted on <?php the_time('M j, Y'); ?> <br>by <?php the_author(); ?></p>
+                                    <p class="post-meta"><?php _e( 'Posted on', 'wptm001' ); ?> <?php the_time('M j, Y'); ?> <br><?php _e( 'by', 'wptm001' ); ?> <?php the_author(); ?></p>
                                 </div>
                                 <div class="entry-copy">
                                     <?php the_excerpt() ?>
                                 </div>
                                 <div class="post-info">
-                                    <p class="post-categories">Categories: <?php the_category( ', ' ); ?></p>
-                                    <p class="post-tags">Tags: <?php the_tags( '', ', ' ); ?></p>
-                                    <p class="post-comments"><?php comments_number( 'No Comments', '1 Comment', '% Comments' ); ?></p>
+                                    <p class="post-categories"><?php _e( 'Categories', 'wptm001' ); ?>: <?php the_category( ', ' ); ?></p>
+                                    <p class="post-tags"><?php _e( 'Tags', 'wptm001' ); ?>: <?php the_tags( '', ', ' ); ?></p>
+                                    <p class="post-comments"><?php comments_number( _e( 'No Comments', 'wptm001' ), _e( '1 Comment', 'wptm001' ), _e( '% Comments', 'wptm001' ) ); ?></p>
                                 </div>
                             </article>
                     <?php

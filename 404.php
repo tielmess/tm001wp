@@ -3,11 +3,11 @@
     <div id="nofind" class="content-area">
         <main id="main" class="site-main">
             <section class="page-container">
-                <h1>404 - Page Not Found</h1>
-                <p>Sorry, the page you are looking for does not exist. Please check the URL or return to the homepage.</p>
-                <a href="<?php echo home_url(); ?>" class="button">Go to Homepage</a>
+                <h1><?php _e( '404 - Page Not Found', 'wptm001' ); ?></h1>
+                <p><?php _e( 'Sorry, the page you are looking for does not exist. Please check the URL or return to the homepage.', 'wptm001' ); ?></p>
+                <a href="<?php echo home_url(); ?>" class="button"><?php _e( 'Go to Homepage', 'wptm001' ); ?></a>
                 <div>
-                    <h2>Latest Blog Posts</h2>
+                    <h2><?php _e( 'Latest Blog Posts', 'wptm001' ); ?></h2>
                     <?php
                     $recent_posts = new WP_Query( array(
                         'posts_per_page' => 3,
@@ -16,12 +16,12 @@
                     if ( $recent_posts->have_posts() ) :
                         echo '<ul class="recent-posts">';
                         while ( $recent_posts->have_posts() ) : $recent_posts->the_post();
-                            echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+                            echo '<li><a href="' . get_permalink() . '">' . _e( get_the_title(), 'wptm001' ) . '</a></li>';
                         endwhile;
                         echo '</ul>';
                         wp_reset_postdata();
                     else :
-                        echo '<p>No recent posts available.</p>';   
+                        echo _e( 'No recent posts available.', 'wptm001' );
                     endif;
                     ?>
                 </div>

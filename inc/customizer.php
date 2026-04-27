@@ -112,61 +112,60 @@ function wp_tm001_customize_register( $wp_customize ) {
     $wp_customize->add_section( 'sec_blog' , array(
         'title'      => __( 'Home Blog Section', 'wp_tm001' ),
         'priority'   => 30,
-        'description' => 'Customize the Home page blog section of your theme',
+        'description' => 'Filter blog posts by ID or Slug.',
     ) );
 
     // Posts per page
     $wp_customize->add_setting( 'set_posts_per_page' , array(
-        'default'   => 3,
-        'transport' => 'refresh',
+        'default'   => 5,
         'sanitize_callback' => 'absint',
     ) );
     $wp_customize->add_control( 'set_posts_per_page', array(
         'label'      => __( 'Posts per Page', 'wp_tm001' ),
         'section'    => 'sec_blog',
-        'settings'   => 'set_posts_per_page',
         'type'       => 'number',
-        'input_attrs' => array(
-            'min' => 1,
-            'max' => 20,
-        ),
     ) );
 
-    // Post categories to display
-    $categories = get_categories();
-    $category_choices = array();
-    foreach ( $categories as $category ) {
-        $category_choices[ $category->term_id ] = $category->name;
-    }
+    // INCLUDE: IDs
     $wp_customize->add_setting( 'set_blog_categories' , array(
         'default'   => '',
-        'transport' => 'refresh',
         'sanitize_callback' => 'wp_parse_id_list',
-    ) );
+    ) );        
     $wp_customize->add_control( 'set_blog_categories', array(
-        'label'      => __( 'Blog Categories to Display', 'wp_tm001' ),
+        'label'      => __( 'Include Category IDs', 'wp_tm001' ),
         'section'    => 'sec_blog',
-        'settings'   => 'set_blog_categories',
-        'type'       => 'text',
-        'choices'    => $category_choices,
-        'description' => 'Comma-separated list of category IDs to include in the blog section (leave blank to include all)',
+        'description' => 'Comma-separated IDs (e.g. 1,2,3)',
     ) );
 
-    // Post category to exclude
+    // EXCLUDE: IDs
     $wp_customize->add_setting( 'set_blog_exclude_category' , array(
         'default'   => '',
-        'transport' => 'refresh',
         'sanitize_callback' => 'wp_parse_id_list',
     ) );
     $wp_customize->add_control( 'set_blog_exclude_category', array(
-        'label'      => __( 'Blog Category to Exclude', 'wp_tm001' ),
+        'label'      => __( 'Exclude Category IDs', 'wp_tm001' ),
         'section'    => 'sec_blog',
-        'settings'   => 'set_blog_exclude_category',
-        'type'       => 'text',
-        'choices'    => $category_choices,
-        'description' => 'Comma-separated list of category IDs to exclude from the blog section (leave blank to include all)',
-    ) );    
+    ) );
 
+    // INCLUDE: Slugs
+    $wp_customize->add_setting( 'set_blog_category_names' , array(
+        'default'           => '',
+        'sanitize_callback' => 'sanitize_text_field',
+    ) );        
+    $wp_customize->add_control( 'set_blog_category_names', array(
+        'label'       => __( 'Include Category Slugs', 'wp_tm001' ),
+        'section'     => 'sec_blog',
+        'description' => 'Use commas for OR (cat1,cat2), plus for AND (cat1+cat2)',
+    ) );
 
-}   
+    // EXCLUDE: Slugs
+    $wp_customize->add_setting( 'set_blog_exclude_category_names' , array(
+        'default'           => '',
+        'sanitize_callback' => 'sanitize_text_field',
+    ) );
+    $wp_customize->add_control( 'set_blog_exclude_category_names', array(
+        'label'       => __( 'Exclude Category Slugs', 'wp_tm001' ),
+        'section'     => 'sec_blog',
+    ) );
+}
 add_action( 'customize_register', 'wp_tm001_customize_register' );

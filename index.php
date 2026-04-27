@@ -7,7 +7,7 @@
                 <main id="main" class="site-main">
                     <section class="updates">
                         <div>
-                            <h1>Blog Posts</h1>
+                            <h1><?php _e( 'Blog Posts', 'wptm001' ); ?></h1>
                             <div class="blog-grid">
                                 <?php
                                 if ( have_posts() ):
@@ -15,16 +15,17 @@
                                         get_template_part( 'parts/content', get_post_format() );
                                     endwhile;
                                     wp_reset_postdata();
-                                else :
-                                    echo '<p>No recent posts found.</p>';
+                                else : ?>                       
+                                    <p><?php _e( 'No recent posts found.', 'wptm001' ); ?></p>
+                                <?php
                                 endif;
                                 ?>
                             </div>
                             <div class="pagination">
                                 <?php
                                 the_posts_pagination( array(
-                                    'prev_text' => '&laquo; Newer posts',
-                                    'next_text' => 'Older posts &raquo;',
+                                    'prev_text' => _e( '&laquo; Newer posts', 'wptm001' ),
+                                    'next_text' => _e( 'Older posts &raquo;', 'wptm001' ),
                                 ) );
                                 ?>
                             </div>
