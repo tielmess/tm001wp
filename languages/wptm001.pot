@@ -1,0 +1,270 @@
+# Blank WordPress Pot
+# Copyright 2014 ...
+# This file is distributed under the GNU General Public License v3 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: "
+"wptm001 v1.0.0\n"
+"Report-Msgid-Bugs-To: "
+"Translator Name "
+"<translations@example.com>\n"
+"POT-Creation-Date: "
+"2026-04-27 02:36+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Your "
+"Name <you@example.com>\n"
+"Language-Team: Your Team "
+"<translations@example.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/"
+"plain; charset=UTF-8\n"
+"Content-Transfer-"
+"Encoding: 8bit\n"
+"Plural-Forms: "
+"nplurals=2; plural=n != "
+"1;\n"
+"X-Textdomain-Support: "
+"yesX-Generator: Poedit "
+"1.6.4\n"
+"X-Poedit-SourceCharset: "
+"UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;esc_html_e;esc_html_x:1,2c;esc_html__;esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Bookmarks: \n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-"
+"SearchPath-0: .\n"
+
+#: 404.php:6
+msgid ""
+"404 - Page Not Found"
+msgstr ""
+
+#: 404.php:7
+msgid ""
+"Sorry, the page you are "
+"looking for does not "
+"exist. Please check the "
+"URL or return to the "
+"homepage."
+msgstr ""
+
+#: 404.php:8
+msgid "Go to Homepage"
+msgstr ""
+
+#: 404.php:10
+msgid "Latest Blog Posts"
+msgstr ""
+
+#: 404.php:24
+msgid ""
+"No recent posts "
+"available."
+msgstr ""
+
+#: archive.php:24
+#: index.php:19
+#: page-home.php:127
+msgid ""
+"No recent posts found."
+msgstr ""
+
+#: archive.php:32
+#: index.php:27
+msgid "&laquo; Newer posts"
+msgstr ""
+
+#: archive.php:33
+#: index.php:28
+msgid "Older posts &raquo;"
+msgstr ""
+
+#: comments.php:29
+#, php-format
+msgctxt "comments title"
+msgid ""
+"One thought on &ldquo;"
+"%s&rdquo;"
+msgstr ""
+
+#: comments.php:34
+#, php-format
+msgctxt "comments title"
+msgid ""
+"%1$s thought on &ldquo;"
+"%2$s&rdquo;"
+msgid_plural ""
+"%1$s thoughts on &ldquo;"
+"%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:69
+msgid ""
+"Comments are closed."
+msgstr ""
+
+#: footer.php:3
+#: functions.php:22
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:21
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:61
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:63
+msgid ""
+"Add widgets here to "
+"appear in your sidebar."
+msgstr ""
+
+#: inc/customizer.php:11
+msgid "Copyright Settings"
+msgstr ""
+
+#: inc/customizer.php:21
+msgid ""
+"Copyright Information"
+msgstr ""
+
+#: inc/customizer.php:29
+msgid "Hero Section"
+msgstr ""
+
+#: inc/customizer.php:40
+msgid "Hero Title"
+msgstr ""
+
+#: inc/customizer.php:52
+msgid "Hero Text"
+msgstr ""
+
+#: inc/customizer.php:64
+msgid "Hero Button Text"
+msgstr ""
+
+#: inc/customizer.php:77
+msgid "Hero Button Link"
+msgstr ""
+
+#: inc/customizer.php:89
+msgid ""
+"Hero Section Height (px)"
+msgstr ""
+
+#: inc/customizer.php:105
+msgid ""
+"Hero Background Image"
+msgstr ""
+
+#: inc/customizer.php:113
+msgid "Home Blog Section"
+msgstr ""
+
+#: inc/customizer.php:124
+msgid "Posts per Page"
+msgstr ""
+
+#: inc/customizer.php:135
+msgid ""
+"Include Category IDs"
+msgstr ""
+
+#: inc/customizer.php:146
+msgid ""
+"Exclude Category IDs"
+msgstr ""
+
+#: inc/customizer.php:156
+msgid ""
+"Include Category Slugs"
+msgstr ""
+
+#: inc/customizer.php:167
+msgid ""
+"Exclude Category Slugs"
+msgstr ""
+
+#: index.php:10
+msgid "Blog Posts"
+msgstr ""
+
+#: page-home.php:7
+msgid ""
+"Welcome to WP-TM001 Theme"
+msgstr ""
+
+#: page-home.php:8
+msgid ""
+"This is a custom "
+"WordPress theme built "
+"for learning and "
+"experimentation."
+msgstr ""
+
+#: page-home.php:9
+msgid "Learn More"
+msgstr ""
+
+#: page-home.php:38
+msgid ""
+"<p>No recent posts found."
+"</p>"
+msgstr ""
+
+#: search.php:27
+#: single.php:28
+msgid "Posted on"
+msgstr ""
+
+#: search.php:27
+#: single.php:28
+msgid "by"
+msgstr ""
+
+#: search.php:33
+#: single.php:29
+msgid "Categories"
+msgstr ""
+
+#: search.php:34
+#: single.php:30
+msgid "Tags"
+msgstr ""
+
+#: search.php:35
+msgid "No Comments"
+msgstr ""
+
+#: search.php:35
+msgid "1 Comment"
+msgstr ""
+
+#: search.php:35
+msgid "% Comments"
+msgstr ""
+
+#: searchform.php:21
+msgid "Search for"
+msgstr ""
+
+#: searchform.php:23
+msgid "Search"
+msgstr ""
+
+#: single.php:31
+msgid "Comments"
+msgstr ""
+
+#: single.php:37
+msgid "Pages:"
+msgstr ""
